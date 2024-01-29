@@ -33,9 +33,9 @@ const Hore = () => {
           
         </div>
         {/* hero Section */}
-        <Slider></Slider>
         <div className='container pb-8 sm:pb-0'>
-            <div>
+        <Slider>
+                  <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2'>
                     {/* text content section */}
                     <div className='flex gap-4 flex-col justify-center pt-12 sm:pt-0 sm:text-left order-2 sm:order-1 relative z-10'>
@@ -55,6 +55,9 @@ const Hore = () => {
                     </div>
                 </div>
             </div>
+        </Slider>
+      
+            
         </div>
     </div>
   )
