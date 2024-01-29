@@ -25,6 +25,19 @@ const ImageList = [
     },
 ]
 const Hore = () => {
+
+    var settings = {
+        dots: false,
+        arrows:false,
+        Infinite:true,
+        speed: 800,
+        slidesToScroll:1,
+        autoplay:true,
+        autoplaySpeed: 4000,
+        cssEase: "ease-in-out",
+        pauseOnHover: false,
+        pauseOnFocus:true,
+    }
   return (
     <div className='relative overflow-hidden min-h-[50px] sm:min-h-[550px] bg-gray-100 dark:bg-gray-950 dark:text-[#ffff]
     justify-center items-center duration-300 flex'>
@@ -34,14 +47,20 @@ const Hore = () => {
         </div>
         {/* hero Section */}
         <div className='container pb-8 sm:pb-0'>
-        <Slider>
+        <Slider {... settings}
+            >
+        {ImageList.map((data) => (
+
+
+            
+            
                   <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2'>
                     {/* text content section */}
                     <div className='flex gap-4 flex-col justify-center pt-12 sm:pt-0 sm:text-left order-2 sm:order-1 relative z-10'>
                         <h1 className='text-5xl sm:text-6xl
-                        lg:text-7xl font-bold text-center'>Lorem, ipsum dolor.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum.</p>
+                        lg:text-7xl font-bold text-center'>{data.title}</h1>
+                        <p>{data.description}</p>
                         <div>
                             <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-300 text-[#ffff] py-2 px-4 rounded-full'>Order Now</button>
                         </div>
@@ -49,12 +68,13 @@ const Hore = () => {
                     {/* Image section */}
                     <div className='order-1 sm:order-2'>
                         <div className='relative z-10'>
-                            <img src={imag1} alt="" className='w-[300px] h-[250px] sm:h-[400px] sm:w-[450px] scale-125
+                            <img src={data.img} alt="" className='w-[300px] h-[250px] sm:h-[400px] sm:w-[450px] scale-125
                             object-cover mx-auto'/>
                         </div>
                     </div>
                 </div>
             </div>
+                        ))}
         </Slider>
       
             
