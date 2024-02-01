@@ -1,8 +1,9 @@
 // import { FaCartShopping } from "react-icons/fa6";
+import { IoMdMoon } from "react-icons/io";
 import ligthButton from "../../assets/120372651_716530878953579_4552147316240737550_n.jpg"
 import DarkButton from "../../assets/37954098_447256419086479_8385634392277516288_n.jpg"
 import React from "react";
-
+import {TiAdjustBrightness, TiWeatherSunny} from "react-icons/ti"
 
 
 const DarkMode = () => {
@@ -26,22 +27,31 @@ const DarkMode = () => {
 
 
   return (
-    <div className="relative">
-        <img 
+    <div className="relative flex justify-center items-center">
+        <TiAdjustBrightness
         onClick={() => setTheme (theme == "light" ? "dark" : "light")}
         src={ligthButton} alt="" className={`
         w-12
         cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0
-        z-10 bg-primary text-[#fff]
+        z-10 text-white  bg-primary
         
         ${
           theme == "dark" ? "opacity-0" : "opacity-100"
-        }`}/>
+        }`} size={30}/>
         
-        <img 
-         onClick={() => setTheme (theme === "light" ? "dark" : "light")}
+        <IoMdMoon 
+         onClick={() => setTheme (theme === "light" ? "dark" : "light")} size={20}
         src={DarkButton} alt="" className="w-12
-        cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 bg-[red]"/>
+        cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 text-black"/>
+
+
+
+
+
+
+
+
+        
     </div>
   )
 }

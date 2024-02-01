@@ -1,3 +1,4 @@
+
 import React from 'react'
 import imag1 from "../../assets/421274287_753953766786060_3217210216668698656_n.jpg"
 import imag2 from "../../assets/421440787_241609228982645_7822536286315392712_n.jpg"
@@ -59,8 +60,8 @@ const Hore = () => {
                     {/* text content section */}
                     <div className='flex gap-4 flex-col justify-center pt-12 sm:pt-0 sm:text-left order-2 sm:order-1 relative z-10'>
                         <h1 className='text-5xl sm:text-6xl
-                        lg:text-7xl font-bold text-center'>{data.title}</h1>
-                        <p>{data.description}</p>
+                        lg:text-7xl font-bold'>{data.title}</h1>
+                        <p className='text-[11px] w-[459px] max-sm:w-full'>{data.description}</p>
                         <div>
                             <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-300 text-[#ffff] py-2 px-4 rounded-full'>Order Now</button>
                         </div>
