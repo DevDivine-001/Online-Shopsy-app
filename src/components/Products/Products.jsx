@@ -123,6 +123,9 @@ const Products = () => {
          }
  
         </div>
+        <div className='flex justify-center'>
+            <button className='text-center bg-primary cursor-pointer text-[#ffff] px-4 py-2 rounded-md'>View All Button</button>
+        </div>
     </section>
 
 </div>

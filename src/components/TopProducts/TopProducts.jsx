@@ -3,33 +3,34 @@ import img1 from "../../assets/420140807_924816742693531_4764668901687945937_n.j
 import img2 from "../../assets/421220501_3672052593076733_8299361390558794083_n.jpg"
 import img3 from "../../assets/Screenshot 2024-01-17 135502.png"
 import img4 from "../../assets/421109000_3579057692310117_3831614934001987769_n.jpg"
+import {FaStar} from "react-icons/fa"
 
 const ProductsData = [
     {
         id: 1,
         img: img1,
         title: "Casual Wear",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia earum possimus, maxime sit, magnam quidem minus, excepturi quasi ea cumque. Laboriosam cum laudantium eaque expedita voluptatum nisi blanditiis voluptas!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia earum possimus, "
     },
 
     {
         id: 2,
         img: img2,
            title: "Printed shirt Wear",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, ea iure. Et ipsa at repudiandae quam ea praesentium recusandae nobis dolores nam molestiae ducimus vel accusamus est temporibus, esse quia?"
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, ea iure. Et ipsa at "
     },
 
     {
         id: 3,
         img: img3,
              title: "Women shirt",
-        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus recusandae, sed est nesciunt eius fuga explicabo dignissimos voluptates cumque, in reprehenderit dicta optio quaerat ut minima modi! Esse, excepturi!"
+        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus "
     },
     {
         id: 4,
         img: img4,
              title: "Women shirt",
-        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus recusandae, sed est nesciunt eius fuga explicabo dignissimos voluptates cumque, in reprehenderit dicta optio quaerat ut minima modi! Esse, excepturi!"
+        description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus "
     },
 ]
 
@@ -51,14 +52,26 @@ const TopProducts = () => {
             {ProductsData.map((data) => (
                 <div className='dark:bg-gray-800 rounded-2xl bg-white hover:bg-black/80
                 dark:hover:bg-primary hover:text-white relative
-                shadow-xl duration-300 group w-[70%] h-auto '>
+                shadow-xl duration-300 group w-[70%] h-auto cursor-pointer pt-2 pb-2'>
                     {/* image Section */}
-                    <div data-aos="fade-up" className='flex items-center justify-center object-cover'>
+                    <div data-aos="fade-up" className='flex items-center justify-center object-cover w-[100%] h-auto flex-col'>
                         <img src={data.img} alt="" 
                         className=' h-[230px] w-[85%] object-cover rounded-md items-center justify-center flex'
                         />
-                        <div>
+                        <div className='w-[85%] h-auto flex  justify-center flex-col'>
                             {/* details Section */}
+                            <span className='text-center font-semibold'>{data.title}</span>
+                         <div className='flex justify-center items-center p-2'>   <FaStar className='text-primary'/>
+                            <FaStar className='text-primary'/>
+                            <FaStar className='text-primary'/>
+                            <FaStar className='text-primary'/>
+                            </div>
+                            <p className='w-[100%] h-[75px] flex items-center justify-center text-[15px] text-center'>{data.description}</p>
+                           <div className='flex
+                            justify-center items-center'>
+                             <button className='py-[7px] px-7 bg-primary flex
+                           hover:scale-105 justify-center items-center rounded-full duration-300 group-hover:text-primary group-hover:bg-[#fff] text-[#fff]'>Order Now</button>
+                           </div>
                         </div>
                     </div>
                 </div>
