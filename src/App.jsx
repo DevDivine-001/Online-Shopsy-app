@@ -21,7 +21,7 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className='bg-[#fff] dark:bg-gray-900 dark:text-[#fff] transition-all duration-300'>
       <Navbar/>
       <Hore/>
       <Products/>
