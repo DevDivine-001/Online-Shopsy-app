@@ -17,7 +17,7 @@ const Banner = () => {
              <div className='flex flex-col justify-center gap-6 sm:pt-0'> 
               <h1 data-aos="fade-up" className='text-3xl sm:text-4xl font-bold'>Winter Sale upto 50% off</h1>
               <p data-aos="fade-up" className='text-sm text-gray-500
-              tracking-wide leading-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quod iste nostrum saepe. Laboriosam, sequi at! Voluptatibus itaque commodi doloribus quod dolorem nobis, libero impedit quidem consectetur, mollitia suscipit? Officiis!</p>
+              tracking-wide leading-5 dark:text-[#ffff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quod iste nostrum saepe. Laboriosam, sequi at! Voluptatibus itaque commodi doloribus quod dolorem nobis, libero impedit quidem consectetur, mollitia suscipit? Officiis!</p>
               <div className='flex flex-col gap-4'>
               <div data-aos="fade-up" className='flex items-center gap-4'>
                 <GrSecure className='text-4xl h-12 w-12 

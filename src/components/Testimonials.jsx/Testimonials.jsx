@@ -74,7 +74,7 @@ const Testimonials = () => {
             <div className='text-center mb-10 max-w-[600px] mx-auto'>
                 <span data-aos="fade-up" className='text-sm text-primary'>What our customers are saying</span>
                 <h1 data-aos="fade-up" className='text-3xl font-bold'>Testimonial</h1>
-                <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil optio soluta qui quam, voluptatem iste omnis tenetur, aliquam cupiditate, libero officia ducimus assumenda in laboriosam amet natus earum vero.</p>
+                <p data-aos="fade-up" className='text-xs text-gray-400 dark:text-[#fff]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil optio soluta qui quam, voluptatem iste omnis tenetur, aliquam cupiditate, libero officia ducimus assumenda in laboriosam amet natus earum vero.</p>
             </div>
             {/* Testimonial cards */}
             <div data-aos="zoom-in">
@@ -83,14 +83,14 @@ const Testimonials = () => {
                         TestimonialData.map((data) => (
                  <div className='p-3'>           
                             <div key={data.id} 
-                            className='flex flex-col gap-3 shadow-md py-6 px-6 mx-4 rounded-xl dark:gray-800 bg-primary/10 cursor-pointer'>
+                            className='flex flex-col gap-3 shadow-md py-6 px-6 mx-4 rounded-xl dark:gray-800 bg-primary/10 cursor-pointer '>
                                 <div className=''>
                                     <img src={data.img}
                                     className='rounded-full w-20 h-20'
                                      alt="" />
                                 </div>
                                 <div className='flex flex-col gap-1 space-y-2'>
-                                    <span className='text-xs text-gray-500'>{data.text}</span>
+                                    <span className='text-xs text-gray-500 dark:text-[#fff]'>{data.text}</span>
                                     <h1 className='font-bold text-md *:text-black/80 dark:text-light'>{data.name}</h1>
                                 </div>
                             </div></div>

@@ -50,8 +50,9 @@ const DropdownLinks = [
   },
 ]
 
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   return (
+
     <div className='shadow-md bg-[#fff] dark:bg-gray-900
      dark:text-[#fff] duration-200 relative z-40'>
       {/* upper Navbar */}                                                   
@@ -75,7 +76,7 @@ const Navbar = () => {
             </div>
           {/* order  button */}
           <button
-          onClick={({}) =>({}) }
+          onClick={() => handleOrderPopup ()}
           className='bg-gradient-to-r from-primary
           to-secondary transition-all duration-300
           text-[#fff] py-1 px-4 rounded-full flex 
@@ -135,6 +136,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+    
   )
 }
 

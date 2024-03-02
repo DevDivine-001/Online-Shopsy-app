@@ -55,6 +55,7 @@ const TopProducts = () => {
                 shadow-xl duration-300 group w-[70%] h-auto cursor-pointer pt-2 pb-2'>
                     {/* image Section */}
                     <div data-aos="fade-up" className='flex items-center justify-center object-cover w-[100%] h-auto flex-col'>
+                      
                         <img src={data.img} alt="" 
                         className=' h-[230px] w-[85%] object-cover rounded-md items-center justify-center flex'
                         />
