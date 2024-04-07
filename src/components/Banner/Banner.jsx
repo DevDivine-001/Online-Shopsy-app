@@ -10,7 +10,7 @@ const Banner = () => {
         <div className='container'>
          <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 items-center '>
              {/* Image Section */}
-                <div data-aos="zoom-in">
+                <div data-aos="zoom-out">
                     <img src={Bannerimage} alt="" className='w-[85%] h-[400px] object-cover drop-shadow-[-5px_5px_7px_rgba(0,0,0,1)] rounded-md cursor-pointer flex items-center justify-center'/>
                 </div>
                 {/* text details sections */}

@@ -1,6 +1,6 @@
 // import { FaCartShopping } from "react-icons/fa6";
 import { IoMdMoon } from "react-icons/io";
-import ligthButton from "../../assets/120372651_716530878953579_4552147316240737550_n.jpg"
+import lightButton from "../../assets/120372651_716530878953579_4552147316240737550_n.jpg"
 import DarkButton from "../../assets/37954098_447256419086479_8385634392277516288_n.jpg"
 import React from "react";
 import {TiAdjustBrightness, TiWeatherSunny} from "react-icons/ti"
@@ -30,7 +30,7 @@ const DarkMode = () => {
     <div className="relative flex justify-center items-center">
         <TiAdjustBrightness
         onClick={() => setTheme (theme == "light" ? "dark" : "light")}
-        src={ligthButton} alt="" className={`
+        src={lightButton} alt="" className={`
         w-12
         cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0
         z-10 text-white  bg-primary
