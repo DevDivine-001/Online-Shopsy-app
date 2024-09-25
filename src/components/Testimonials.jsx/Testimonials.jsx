@@ -77,7 +77,7 @@ const Testimonials = () => {
                 <p data-aos="fade-up" className='text-xs text-gray-400 dark:text-[#fff]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil optio soluta qui quam, voluptatem iste omnis tenetur, aliquam cupiditate, libero officia ducimus assumenda in laboriosam amet natus earum vero.</p>
             </div>
             {/* Testimonial cards */}
-            <div data-aos="zoom-in">
+            <div  >
                 <Slider {... settings}>
                     {
                         TestimonialData.map((data) => (

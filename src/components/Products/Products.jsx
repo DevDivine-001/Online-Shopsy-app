@@ -5,6 +5,7 @@ import img3 from "../../assets/Screenshot 2024-01-17 135502.png"
 import img4 from "../../assets/421109000_3579057692310117_3831614934001987769_n.jpg"
 import img5 from "../../assets/Screenshot 2023-11-15 224723.png"
 import { FaStar } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const ProductsData = [
     {
@@ -91,6 +92,7 @@ const Products = () => {
             <h1 data-aos="fade-up" className='text-3xl font-bold'>Products</h1>
             <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatem quaerat perspiciatis consectetur</p>
         </div>
+        {/* <Link to="">Rout</Link> */}
     </section>
 
     {/* Body Section */}

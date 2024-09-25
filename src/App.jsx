@@ -12,11 +12,11 @@ import Footer from './components/Footer/Footer'
 import Popup from './components/Popup/Popup'
 
 const App = () => {
- const [orderPopup, setOrderPopup] = React.useState(false)
+  const [orderPopup, setOrderPopup] = React.useState(false)
 
- const handleOrderPopup =() =>{
-  setOrderPopup(!orderPopup)
- }
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup)
+  }
 
   React.useEffect(() => {
     AOS.init({
@@ -28,15 +28,18 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className='bg-[#fff] dark:bg-gray-900 dark:text-[#fff] transition-all duration-300'>
-      <Navbar handleOrderPopup={handleOrderPopup}/>
-      <Hore/>
-      <Products/>
-  <TopProducts/>
-  <Banner/>
-  <Subscribe/>
-      <Testimonials/>
-      <Footer/>
+    <div className='bg-[#fff]
+    
+    dark:bg-gray-900 dark:text-[#fff] transition-all duration-300'>
+      sss
+      <Navbar handleOrderPopup={handleOrderPopup} />
+      <Hore />
+      <Products />
+      <TopProducts />
+      <Banner />
+      <Subscribe />
+      <Testimonials />
+      <Footer />
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   )
